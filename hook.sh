@@ -3,8 +3,8 @@
 if [ $ARGUMENT ]; then
     if [[ $ARGUMENT =~ .+\.[jpg|JPG] ]]
 	then
-		qiv --fullscreen --scale_down --autorotate "$ARGUMENT" &
-		cp "$ARGUMENT" /_path_to_image_copy &
+		qiv --fullscreen --scale_down --autorotate --no_statusbar "$ARGUMENT" &
+		#cp "$ARGUMENT" /_path_to_image_copy &
 		
 
 	fi
