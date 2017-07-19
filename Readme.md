@@ -6,15 +6,15 @@ Remote RF trigger was set to trigger shutter. When shutter was triggered image w
 
     $ sudo apt-get install gphoto2 qiv
     
-    $ env LANG=C gphoto2 --port usb: --capture-tethered --hook-script=hook.sh --filename "photos/image-%Y%m%d-%H%M%S.jpg"
+    $ ./run.sh
 
 
 # Tested on:
-Ubuntu 14.04
 
-gphoto2 & libphoto2 2.5.8
-
-Canon 450D Reel xsi
+-Ubuntu 14.04 & 16.04
+- gphoto2 & libphoto2 2.5.9
+- qiv v2.3.1
+- Canon 450D Reel xsi
 
 # Thanks to:
 
