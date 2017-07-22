@@ -5,7 +5,11 @@ Quick hack of a wedding photobooth using Linux Gphoto2 Canon DSLR > photos are d
 Remote RF trigger was set to trigger shutter. When shutter was triggered image was captured using gphoto2 (no SD card in camera) to the computer and script 'hook.sh' was ran to dispaly the image using qiv
 
     $ sudo apt-get install gphoto2 qiv
-    
+ 
+    $ ps aux | grep gvfs
+
+kill `gvfs-gphoto2-volume-monitor`
+   
     $ ./run.sh
 
 
